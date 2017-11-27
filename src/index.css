@@ -8,3 +8,44 @@ body {
 h1 {
   text-align: center;
 }
+
+div {
+  width:
+}
+
+
+/*iPad/tablet CSS*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: blue;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  div {
+    width:
+  }
+}
+
+/*standard PC CSS*/
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: green;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  div {
+    width:
+  }
+}
