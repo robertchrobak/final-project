@@ -6,7 +6,11 @@ class MealPlan extends Component {
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>
-          <span>1 apple, almond butter, coffee</span>
+          <ul>
+            <li>1 apple</li>
+            <li>almond butter</li>
+            <li>coffee</li>
+          </ul>
         </div>
         <div className="Meal">
           <h2>Meal 2</h2>
