@@ -7,7 +7,7 @@ class MealPlan extends Component {
         <div className="Meal">
           <h2>Meal 1</h2>
           <ul>
-            <li>1 apple</li>
+            <button type="text">enter food item</button> 
             <li>almond butter</li>
             <li>coffee</li>
           </ul>
