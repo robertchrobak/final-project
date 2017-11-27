@@ -6,6 +6,7 @@ class MealPlan extends Component {
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>
+          <input placeholder="type foods"></input><button type="submit">enter</button>
           <ul>
             <li>1 apple</li>
             <li>almond butter</li>
@@ -14,15 +15,26 @@ class MealPlan extends Component {
         </div>
         <div className="Meal">
           <h2>Meal 2</h2>
-          <span>1 grilled cheese sandwich, tomato soup</span>
+          <input placeholder="type foods"></input>
+          <ul>
+            <li>1 grilled cheese sandwich</li>
+            <li>tomato soup</li>
+          </ul>
         </div>
         <div className="Meal">
           <h2>Meal 3</h2>
-          <span>1 falafel sandwich, 1 tabbouleh salad</span>
+          <input placeholder="type foods"></input>
+          <ul>
+            <li>1 falafel sandwich</li>
+            <li>1 tabbouleh salad</li>
+          </ul>
         </div>
         <div className="Meal">
           <h2>Snacks</h2>
-          <span>pistachios</span>
+          <input placeholder="type foods"></input>
+          <ul>
+            <li>pistachios</li>
+          </ul>
         </div>
       </div>);
   }

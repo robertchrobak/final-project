@@ -46,21 +46,43 @@ p.caloricGoal {
 }
 
 .Meal {
-  background-color: white;
+  background-color: rgba(255,165,0,0.6);
   border: 3px solid rgba(255,165,0,0.6);
   border-radius: 10px;
   margin: 10px;
-  padding: 5px;
+}
+
+.Meal button {
+  background-color: rgba(186,102,0,1);
+  color: white;
+  border: 0;
 }
 
 .Meal h2 {
+  color: rgba(186,102,0,1);
+  padding: 8px;
+  display: inline-block;
+}
+
+.Meal input {
+  background-color: rgba(255,165,0,0.6);
+  color: rgba(186,102,0,1);
+  border: 0;
+  text-align: right;
+  font-style: Arial;
+  margin: 5px;
+}
+
+.Meal input::placeholder {
   color: rgba(186,102,0,1);
 }
 
 .Meal ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .ProgressBar {
@@ -72,10 +94,11 @@ p.caloricGoal {
   color: rgba(186,102,0,1);
 }
 
-#ProgressBar {
-  background-color: orange;
+.ProgressBar progress {
+  color: orange;
+  height: 10px;
+  width: 100%;
 }
-
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
   body {

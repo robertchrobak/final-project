@@ -5,7 +5,7 @@ class ProgressBar extends Component {
     return (
       <div className="ProgressBar">
         <h2>Progress bar</h2>
-      <progress id="ProgressBar" value="1700" max="1800"></progress>
+      <progress value="1700" max="1800">yeah</progress>
     </div>
     );
   }
