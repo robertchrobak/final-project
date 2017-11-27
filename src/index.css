@@ -57,6 +57,12 @@ p.caloricGoal {
   color: rgba(186,102,0,1);
 }
 
+.Meal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .ProgressBar {
   background-color: white;
   padding: 12px;
