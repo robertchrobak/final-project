@@ -1,19 +1,40 @@
 import React, {Component} from 'react';
 
 class HeaderBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      calorieGoal: 0
+    };
+  }
   render() {
     return (
       <div className="headerWrapper">
         <div className="headerLeft">
           <h1> TODAY'S MEAL PLAN</h1>
         </div>
-
-        <div className="headerRight">
-          <p className= "caloricGoal">Caloric Goal: 1700</p>
-        </div>
+          <input className="caloricGoal" placeholder="enter daily calories" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
+          <button type="submit" onSubmit={this.handleSubmit.bind(this)}>enter</button>
       </div>
     );
   }
+
+
+handleCalorieGoalChange(event) {
+  this.setState({
+    calorieGoal: event.target.value
+  });
+}
+
+handleSubmit() {
+  this.props.onSubmit({
+    calorieGoal: this.state.calorieGoal
+  });
+  this.setState({
+    calorieGoal: null
+  })
+}
+
 }
 
 export default HeaderBar;

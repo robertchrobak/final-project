@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import '../index.css';
 import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
@@ -12,7 +13,7 @@ class App extends Component {
       <div className="App">
 
         <header className="App-header">
-          <h1 className="App-title">Anthony, Cecil & Robert's Final Project</h1>
+          <h1 className="App-title">DAILY CALORIE COUNTER</h1>
         </header>
 
         <div className="HeaderBar">

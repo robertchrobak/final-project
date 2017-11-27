@@ -8,7 +8,7 @@ class MealPlan extends Component {
           <h2>Meal 1</h2>
           <input placeholder="type foods"></input><button type="submit">enter</button>
           <ul>
-            <button type="text">enter food item</button> 
+            <button type="text">enter food item</button>
             <li>almond butter</li>
             <li>coffee</li>
           </ul>
