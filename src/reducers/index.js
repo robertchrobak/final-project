@@ -1,19 +1,21 @@
 const INITIAL_STATE = {
-    foodItems: [
-      { name: "",
-      calorieCount: 0 }
-    ]
+  data: [],
+  isLoading: true
 }
 
 export default function(state = INITIAL_STATE, action) {
-    switch(action.type) {
-        case "ADD":
-            const newFoodItems = state.FoodItems.slice(0);
-            newFoodItems.push(action.FoodItems);
-            return Object.assign({}, state, {
-                FoodItems: newFoodItems
-            });
-        default:
-            return state;
-    }
+  switch (action.type) {
+    case "REQUEST":
+      return Object.assign({}, state, {
+        data: [],
+        isLoading: true
+      });
+    case "RECEIVE":
+      return Object.assign({}, state, {
+        data: action.data,
+        isLoading: false
+      });
+    default:
+      return state;
+  }
 }
