@@ -4,7 +4,7 @@ class HeaderBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      calorieGoal: 0
+      calorieGoal: null
     };
   }
   render() {
