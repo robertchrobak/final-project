@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import '../index.css';
 import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
