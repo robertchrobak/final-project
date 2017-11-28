@@ -6,6 +6,7 @@ import HeaderBar from './HeaderBar';
 import MealPlan from './MealPlan';
 import ProgressBar from './ProgressBar';
 import FoodForm from './FoodForm';
+import Chart from "./Chart";
 
 
 class App extends Component {
@@ -32,6 +33,9 @@ class App extends Component {
         </div>
         <div className="FooterBar">
           <FooterBar />
+        </div>
+        <div>
+          <Chart className="Chart"/>
         </div>
 
       </div>
