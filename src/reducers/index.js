@@ -11,6 +11,12 @@ const INITIAL_STATE = {
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
+    case "REGISTER":
+        const newFoodItems = state.foodItems.slice(0);
+        newFoodItems.push(action.foodSubmission);
+        return Object.assign({}, state, {
+          foodItems: newFoodItems
+        });
     case "REQUEST":
       return Object.assign({}, state, {
         foodItems: [],
