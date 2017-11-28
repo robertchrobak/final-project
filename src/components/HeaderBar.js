@@ -4,7 +4,7 @@ class HeaderBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      calorieGoal: 0
+      calorieGoal: null
     };
   }
   render() {
@@ -13,12 +13,13 @@ class HeaderBar extends Component {
         <div className="headerLeft">
           <h1> TODAY'S MEAL PLAN</h1>
         </div>
-          <input className="caloricGoal" placeholder="enter daily calories" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
+          <input className="caloricGoal" placeholder="today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
           <button type="submit" onSubmit={this.handleSubmit.bind(this)}>enter</button>
       </div>
     );
   }
 
+let calorieGoal = null;
 
 handleCalorieGoalChange(event) {
   this.setState({
