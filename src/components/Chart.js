@@ -7,16 +7,16 @@ constructor(props){
   super(props);
   this.state = {
     chartData:{
-      labels: ['', 'Week 1', 'Week 2', 'Week 3', 'Week 4'],
+      labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       datasets:[
         {
           label: 'Calories consumed',
           data:[
-            60 ,
-            75 ,
-            89,
-            93,
-            78
+            2000 ,
+            1895 ,
+            1780,
+            1800,
+            1900,
           ],
           backgroundColor: ['red','red', 'red', 'red', 'red']
         }
