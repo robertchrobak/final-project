@@ -33,13 +33,13 @@ h1 {
   background-color: white;
 }
 
-/*.caloricGoal {
+/*.calorieGoal {
   background-color: white;
   width: 100%;
   height: 100%;
 }*/
 
-.caloricGoal input {
+.calorieGoal input {
   height: 50%;
   border: 0;
 }
