@@ -103,6 +103,11 @@ h1 {
   height: 10px;
   width: 100%;
 }
+
+.FoodForm {
+  text-align: center;
+}
+
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
   body {
