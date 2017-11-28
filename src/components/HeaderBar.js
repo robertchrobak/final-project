@@ -13,7 +13,7 @@ class HeaderBar extends Component {
         <div className="headerLeft">
           <h1> TODAY'S MEAL PLAN</h1>
         </div>
-          <input className="caloricGoal" placeholder="enter daily calories" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
+          <input className="calorieGoal" placeholder="enter daily calories" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
           <button type="submit" onSubmit={this.handleSubmit.bind(this)}>enter</button>
       </div>
     );

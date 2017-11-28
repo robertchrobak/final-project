@@ -6,7 +6,7 @@ class MealPlan extends Component {
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>
-          <input placeholder="type foods"></input><button type="submit">enter</button>
+          <input className="meal1inputform" placeholder="type foods"></input><button type="submit">enter</button>
           <ul>
             <button type="text">enter food item</button>
             <li>almond butter</li>

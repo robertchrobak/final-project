@@ -1,18 +1,22 @@
 const INITIAL_STATE = {
-  data: [],
-  isLoading: true
+  foodItems: [
+   { food: "cookies", calories: 500 },
+   { food: "donuts", calories: 600 },
+   { food: "coffee", calories: 10 }
+ ],
+  isLoading: true,
 }
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
     case "REQUEST":
       return Object.assign({}, state, {
-        data: [],
+        foodItems: [],
         isLoading: true
       });
     case "RECEIVE":
       return Object.assign({}, state, {
-        data: action.data,
+        foodItems: action.foodItems,
         isLoading: false
       });
     default:
