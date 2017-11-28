@@ -15,26 +15,22 @@ class FoodForm extends Component {
     render() {
         return (
             // Added onSubmit handler here.
-            <form className="RegistrationForm" onSubmit={this.onSubmit.bind(this)}>
+            <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <p>
                     <label className="form__label">Food Item</label>
                     {/* Added two-way sync here: value + onChange */}
-                    <input type="text" value={this.state.name} onChange={this.handleNameChange.bind(this)} />
+                    <input type="text"  onChange={this.handleNameChange.bind(this)} />
                 </p>
                 <p>
                     <label className="form__label"></label>
-                    <label><input type="radio" value="Meal 1"
-                                  checked={this.state.mealChoice === 'Meal 1'}
-                                  onChange={this.handleMealChange.bind(this)}/>Meal 1</label>
-                    <label><input type="radio" value="Meal 2"
-                                  checked={this.state.mealChoice === 'Meal 2'}
-                                  onChange={this.handleMealChange.bind(this)}/>Meal 2</label>
-                    <label><input type="radio" value="Meal 3"
-                                  checked={this.state.mealChoice === 'Meal 3'}
-                                  onChange={this.handleMealChange.bind(this)}/>Meal 3</label>
-                    <label><input type="radio" value="Snacks"
-                                  checked={this.state.mealChoice === 'Snacks'}
-                                  onChange={this.handleMealChange.bind(this)}/>Snacks</label>
+                    <label><input type="radio" name="mealOptions" value="Meal 1"
+                        onChange={this.handleMealChange.bind(this)}/>Meal 1</label>
+                    <label><input type="radio" name="mealOptions" value="Meal 2"
+                        onChange={this.handleMealChange.bind(this)}/>Meal 2</label>
+                    <label><input type="radio" name="mealOptions" value="Meal 3"
+                        onChange={this.handleMealChange.bind(this)}/>Meal 3</label>
+                    <label><input type="radio" name="mealOptions" value="Snacks"
+                        onChange={this.handleMealChange.bind(this)}/>Snacks</label>
                 </p>
                 <p>
                     <button type="submit">SUBMIT</button>
@@ -52,12 +48,6 @@ class FoodForm extends Component {
     handleMealChange(event) {
         this.setState({
             name: event.target.value
-        });
-    }
-
-    handleTacoChange(event) {
-        this.setState({
-            tacoChoice: event.target.value
         });
     }
 
