@@ -1,14 +1,31 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 class ProgressBar extends Component {
   render() {
+    let calculatedTotal = 0;
+    const mealItems = this.props.foodItems.map((foodItem, index) =>
+    <div>
+      {calculatedTotal+=foodItem.calories}
+    </div>
+  );
+
+  let calorieGoal = this.props.calorieGoal;
+
     return (
       <div className="ProgressBar">
         <h2>Progress bar</h2>
-      <progress value="1700" max="1800">yeah</progress>
+      <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
+      <div>{calculatedTotal}{calorieGoal}</div>
     </div>
     );
   }
 }
 
-export default ProgressBar;
+function mapStateToProps(state) {
+    return {
+        foodItems: state.foodItems
+    }
+}
+
+export default connect(mapStateToProps)(ProgressBar);
