@@ -8,6 +8,8 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
+import { fetchFoodItems } from './actions';
 // grab our reducer. import will automatically choose the index.js file in the
 // ./reducers folder.
 import reducer from './reducers'
@@ -16,7 +18,10 @@ import reducer from './reducers'
 // the state (data) and calls the reducers.
 const store = createStore(
     reducer,
-    applyMiddleware( createLogger() ) // Enable Redux logging which is handy for developers.
+    applyMiddleware(
+      thunkMiddleware,
+      createLogger()  // Enable Redux logging which is handy for developers.
+     )
 );
 
 // We need wrap our whole app in the Provider component. This lets Redux do its magic.

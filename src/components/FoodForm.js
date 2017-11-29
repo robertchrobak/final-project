@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { register } from '../actions';
+import { fetchFoodItems } from '../actions';
 
 class FoodForm extends Component {
 
@@ -8,7 +8,7 @@ class FoodForm extends Component {
         super(props);
         this.state = {
             name: "",
-            mealChoice: "Meal 1"
+            mealChoice: ""
         };
     }
 
@@ -45,7 +45,7 @@ class FoodForm extends Component {
 
     handleMealChange(event) {
         this.setState({
-            name: event.target.value
+            mealChoice: event.target.value
         });
     }
 
@@ -65,7 +65,7 @@ class FoodForm extends Component {
 }
 
 const mapActionsToProps = {
-    onSubmit: register
+    onSubmit: fetchFoodItems
 }
 
 export default connect(null, mapActionsToProps)(FoodForm);

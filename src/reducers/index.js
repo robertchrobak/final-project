@@ -11,22 +11,10 @@ const INITIAL_STATE = {
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case "REGISTER":
-        const newFoodItems = state.foodItems.slice(0);
-        newFoodItems.push(action.foodSubmission);
-        return Object.assign({}, state, {
-          foodItems: newFoodItems
-        });
-    case "REQUEST":
+    case "RECEIVE_FOODITEM":
       return Object.assign({}, state, {
-        foodItems: [],
-        isLoading: true
-      });
-    case "RECEIVE":
-      return Object.assign({}, state, {
-        foodItems: action.foodItems,
-        isLoading: false
-      });
+        foodItems: [ ...state.foodItems, action.foodItem ]
+      })
     default:
       return state;
   }
