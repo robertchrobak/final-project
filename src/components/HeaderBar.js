@@ -19,7 +19,7 @@ class HeaderBar extends Component {
     );
   }
 
-// let calorieGoal = null;
+let calorieGoal = null;
 
 handleCalorieGoalChange(event) {
   this.setState({
