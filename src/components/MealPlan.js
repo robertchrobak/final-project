@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 class MealPlan extends Component {
   render() {
+    const mealItems = this.props.foodItems.map((foodItem, index) =>
+    <div>
+      <li>{foodItem.food} - {foodItem.calories} calories</li>
+    </div>
+  );
+
     return (
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>
           <ul>
-            <li>almond butter</li>
-            <li>coffee</li>
+            {mealItems}
           </ul>
         </div>
         <div className="Meal">
@@ -35,4 +41,11 @@ class MealPlan extends Component {
   }
 }
 
-export default MealPlan;
+function mapStateToProps(state) {
+    return {
+        foodItems: state.foodItems
+    }
+}
+
+
+export default connect(mapStateToProps)(MealPlan);
