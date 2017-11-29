@@ -24,7 +24,8 @@ class ProgressBar extends Component {
 
 function mapStateToProps(state) {
     return {
-        foodItems: state.foodItems
+        foodItems: state.foodItems,
+        calorieGoal: state.calorieGoal
     }
 }
 

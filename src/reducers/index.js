@@ -5,7 +5,7 @@ const INITIAL_STATE = {
    { food: "1 grilled cheese sandwich", calories: 400, meal: "Meal 2" },
    { food: "tomato soup", calories: 300, meal: "Meal 2" }
   ],
-  calorieGoal: 2000,
+  calorieGoal: 3000,
   isLoading: true,
 }
 
