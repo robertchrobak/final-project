@@ -17,6 +17,8 @@ class FoodForm extends Component {
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <p>
                     <label className="form__label">Food Item </label>
+
+                    {/* add 2-way syncing */}
                     <input type="text"  onChange={this.handleNameChange.bind(this)} />
                 </p>
                 <p>
