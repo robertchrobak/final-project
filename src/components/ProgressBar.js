@@ -4,11 +4,9 @@ import { connect } from 'react-redux';
 class ProgressBar extends Component {
   render() {
     let calculatedTotal = 0;
-    const mealItems = this.props.foodItems.map((foodItem, index) =>
-    <div>
-      {calculatedTotal+=foodItem.calories}
-    </div>
-  );
+    this.props.foodItems.forEach((foodItem) =>
+      calculatedTotal+=foodItem.calories
+    );
 
   let calorieGoal = this.props.calorieGoal;
 
