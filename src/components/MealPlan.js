@@ -4,19 +4,15 @@ import { connect } from 'react-redux';
 class MealPlan extends Component {
   render() {
     const meal1Items = this.props.foodItems.map((foodItem, index) =>
-      <div>
-        <li>{foodItem.food} - {foodItem.calories} calories</li>
-      </div>
+        <li key={index}>{foodItem.food} - {foodItem.calories} calories</li>
     );
 
     const meal2Items = this.props.foodItems.map((foodItem, index) =>
-      <div>
-        <li>{foodItem.food} - {foodItem.calories} calories</li>
-      </div>
+        <li key={index}>{foodItem.food} - {foodItem.calories} calories</li>
     );
 
     return (
-      
+
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>

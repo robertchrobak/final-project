@@ -6,8 +6,6 @@
 // }
 
 
-
-
 import $ from 'jquery-ajax';
 
 // trigger the process, make the request, and call the other two actions
