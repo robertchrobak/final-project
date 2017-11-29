@@ -12,6 +12,10 @@ h1 {
   transform:rotate(-90deg);
 }*/
 
+li {
+  list-style: none;
+}
+
 .headerWrapper {
   display: flex;
   flex-direction: row;

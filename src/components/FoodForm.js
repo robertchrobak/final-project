@@ -14,11 +14,9 @@ class FoodForm extends Component {
 
     render() {
         return (
-            // Added onSubmit handler here.
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <p>
-                    <label className="form__label">Food Item</label>
-                    {/* Added two-way sync here: value + onChange */}
+                    <label className="form__label">Food Item </label>
                     <input type="text"  onChange={this.handleNameChange.bind(this)} />
                 </p>
                 <p>
@@ -51,21 +49,13 @@ class FoodForm extends Component {
         });
     }
 
-    // TODO call this function when the form submits
     onSubmit(event) {
         event.preventDefault();
-
-
-        // Here's the object to add to the registrations array.
         const foodSubmission = {
             name: this.state.name,
             mealChoice: this.state.mealChoice
         }
-
-        // Added this
         this.props.onSubmit(foodSubmission);
-
-        // Clear form
         this.setState({
             name: "",
             mealChoice: "Meal 1"

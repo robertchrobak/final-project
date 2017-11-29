@@ -1,0 +1,146 @@
+{
+    "total_hits": 34612,
+    "max_score": 12.078865,
+    "hits": [
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "513fceb575b8dbbc21001a8f",
+            "_score": 12.078865,
+            "fields": {
+                "item_id": "513fceb575b8dbbc21001a8f",
+                "item_name": "Nuts, almond butter, plain, without salt added - 1 cup",
+                "brand_name": "USDA",
+                "nf_calories": 1535,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "513fceb575b8dbbc21001a8e",
+            "_score": 11.916304,
+            "fields": {
+                "item_id": "513fceb575b8dbbc21001a8e",
+                "item_name": "Nuts, almond butter, plain, without salt added - 1 tbsp",
+                "brand_name": "USDA",
+                "nf_calories": 98.24,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "55c9d23ec24d8fef48e0ba9b",
+            "_score": 1.8978534,
+            "fields": {
+                "item_id": "55c9d23ec24d8fef48e0ba9b",
+                "item_name": "Almond Butter",
+                "brand_name": "Yum Butter",
+                "nf_calories": 180,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "59c60744ac041bb116363f96",
+            "_score": 1.8610086,
+            "fields": {
+                "item_id": "59c60744ac041bb116363f96",
+                "item_name": "Almond Butter",
+                "brand_name": "Barney Butter",
+                "nf_calories": 170,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "545237325882cba14866c76d",
+            "_score": 1.8057334,
+            "fields": {
+                "item_id": "545237325882cba14866c76d",
+                "item_name": "Crunchy Almond Butter",
+                "brand_name": "Almond Wonder",
+                "nf_calories": 190,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "5507828ef36acf0a524dc5e9",
+            "_score": 1.7747864,
+            "fields": {
+                "item_id": "5507828ef36acf0a524dc5e9",
+                "item_name": "Almond Butter, Creamy",
+                "brand_name": "Almond Wonder",
+                "nf_calories": 190,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "550b06e5b6129de43be896c6",
+            "_score": 1.7566386,
+            "fields": {
+                "item_id": "550b06e5b6129de43be896c6",
+                "item_name": "Almond Butter",
+                "brand_name": "Barney Butter",
+                "nf_calories": 180,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "51c3fbc997c3e6dfa4df135c",
+            "_score": 1.6915277,
+            "fields": {
+                "item_id": "51c3fbc997c3e6dfa4df135c",
+                "item_name": "Almond Butter, Crunchy",
+                "brand_name": "Barney Butter",
+                "nf_calories": 180,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "554c32c071d0fd5e745d1e3c",
+            "_score": 1.6850426,
+            "fields": {
+                "item_id": "554c32c071d0fd5e745d1e3c",
+                "item_name": "Almond Butter",
+                "brand_name": "Butter Me Up!",
+                "nf_calories": 170,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        },
+        {
+            "_index": "f762ef22-e660-434f-9071-a10ea6691c27",
+            "_type": "item",
+            "_id": "57ecbc2be2050b9b2c0dc2b2",
+            "_score": 1.6823992,
+            "fields": {
+                "item_id": "57ecbc2be2050b9b2c0dc2b2",
+                "item_name": "Almond Butter, Crunchy",
+                "brand_name": "Barney Butter",
+                "nf_calories": 100,
+                "nf_serving_size_qty": 1,
+                "nf_serving_size_unit": "serving"
+            }
+        }
+    ]
+}
