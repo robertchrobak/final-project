@@ -3,38 +3,41 @@ import { connect } from 'react-redux';
 
 class MealPlan extends Component {
   render() {
-    const mealItems = this.props.foodItems.map((foodItem, index) =>
-    <div>
-      <li>{foodItem.food} - {foodItem.calories} calories</li>
-    </div>
-  );
+    const meal1Items = this.props.foodItems.map((foodItem, index) =>
+      <div>
+        <li>{foodItem.food} - {foodItem.calories} calories</li>
+      </div>
+    );
+
+    const meal2Items = this.props.foodItems.map((foodItem, index) =>
+      <div>
+        <li>{foodItem.food} - {foodItem.calories} calories</li>
+      </div>
+    );
 
     return (
+      
       <div className="MealPlan">
         <div className="Meal">
           <h2>Meal 1</h2>
           <ul>
-            {mealItems}
+            {meal1Items}
           </ul>
         </div>
         <div className="Meal">
           <h2>Meal 2</h2>
           <ul>
-            <li>1 grilled cheese sandwich</li>
-            <li>tomato soup</li>
+            {meal2Items}
           </ul>
         </div>
         <div className="Meal">
           <h2>Meal 3</h2>
           <ul>
-            <li>1 falafel sandwich</li>
-            <li>1 tabbouleh salad</li>
           </ul>
         </div>
         <div className="Meal">
           <h2>Snacks</h2>
           <ul>
-            <li>pistachios</li>
           </ul>
         </div>
       </div>);
