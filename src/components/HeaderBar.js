@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { fetchCalorieGoal } from '../actions';
 
 class HeaderBar extends Component {
   constructor(props) {
@@ -13,9 +15,9 @@ class HeaderBar extends Component {
         <div className="headerLeft">
           <h1>TODAY'S MEAL PLAN</h1>
         </div>
-          <form className="FoodForm" onSubmit={this.handleSubmit.bind(this)}>
-          <input type="number" className="caloricGoal" placeholder="today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
-          <button type="submit" onSubmit={this.handleSubmit.bind(this)}>ENTER</button>
+          <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
+          <input type="number" className="calorieGoal" placeholder="today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
+          <button type="submit">ENTER</button>
           </form>
           <div>{this.state.calorieGoal}</div>
       </div>
@@ -28,15 +30,19 @@ class HeaderBar extends Component {
     });
   }
 
-  handleSubmit() {
-    this.props.onSubmit({
-      calorieGoal: this.state.calorieGoal
-    });
+
+onSubmit(event) {
+    event.preventDefault();
+    this.props.onSubmit(parseInt(this.state.calorieGoal));
     this.setState({
-      calorieGoal: null
-    })
-  }
+        calorieGoal: "",
+    });
+}
 
 }
 
-export default HeaderBar;
+const mapActionsToProps = {
+onSubmit: fetchCalorieGoal
+}
+
+export default connect(null, mapActionsToProps)(HeaderBar);
