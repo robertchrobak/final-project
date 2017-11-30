@@ -1,11 +1,11 @@
 const INITIAL_STATE = {
   foodItems: [
    { food: "almond butter", calories: 200, meal: "Meal 1" },
-   { food: "coffee", calories: 10, meal: "Meal 1" },
-   { food: "1 grilled cheese sandwich", calories: 400, meal: "Meal 2" },
-   { food: "tomato soup", calories: 300, meal: "Meal 2" }
+   { food: "coffee", calories: 10, meal: "Meal 2" },
+   { food: "1 grilled cheese sandwich", calories: 400, meal: "Meal 3" },
+   { food: "tomato soup", calories: 300, meal: "Snacks" }
   ],
-  calorieGoal: 3000,
+  calorieGoal: 1000,
   isLoading: true,
 }
 
@@ -15,6 +15,10 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         foodItems: [ ...state.foodItems, action.foodItem ]
       })
+    // case "RECEIVE_CALORIEGOAL":
+    //   return Object.assign({} state, {
+    //     calorieGoal: calorieGoal
+    //   })
     default:
       return state;
   }

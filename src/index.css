@@ -110,6 +110,12 @@ li {
 
 .FoodForm {
   text-align: center;
+  display: flex;
+}
+
+.FormLabel {
+  color: white;
+
 }
 
 /*iPad/tablet CSS*/
@@ -124,10 +130,6 @@ li {
   h1 {
     text-align: center;
   }
-
-  div {
-    width:
-  }
 }
 
 /*standard PC CSS*/
@@ -141,9 +143,5 @@ li {
 
   h1 {
     text-align: center;
-  }
-
-  div {
-    width:
   }
 }

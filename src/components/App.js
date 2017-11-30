@@ -18,22 +18,26 @@ class App extends Component {
           <h1 className="App-title">DAILY CALORIE COUNTER</h1>
         </header>
 
+        <div className="HeaderBar">
+          <HeaderBar />
+        </div>
+
         <div className="foodFormContainer">
           <FoodForm />
         </div>
 
-        <div className="HeaderBar">
-          <HeaderBar />
-        </div>
         <div className="MealPlan">
           <MealPlan />
         </div>
+
         <div className="ProgressBar">
           <ProgressBar />
         </div>
+
         <div className="FooterBar">
           <FooterBar />
         </div>
+        
         <div>
           <Chart className="Chart"/>
         </div>

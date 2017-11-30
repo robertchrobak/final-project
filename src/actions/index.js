@@ -47,3 +47,10 @@ function receiveFoodItem(foodItem) {
         foodItem
     }
 }
+//
+// function receiveCalorieGoal(calorieGoal) {
+//     return {
+//       type: "RECEIVE_CALORIEGOAL",
+//       calorieGoal
+//     }
+// }

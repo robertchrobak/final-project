@@ -15,14 +15,14 @@ class FoodForm extends Component {
     render() {
         return (
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
-                <p>
-                    <label className="form__label">Food Item </label>
+                <div>
+                    <label className="FormLabel">Food Item </label>
 
                     {/* add 2-way syncing */}
-                    <input type="text"  onChange={this.handleNameChange.bind(this)} />
-                </p>
-                <p>
-                    <label className="form__label"></label>
+                    <input type="text"  onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal"/>
+                </div>
+                <div>
+                    <label className="FormLabel"></label>
                     <label><input type="radio" name="mealOptions" value="Meal 1"
                         onChange={this.handleMealChange.bind(this)}/>Meal 1</label>
                     <label><input type="radio" name="mealOptions" value="Meal 2"
@@ -31,10 +31,10 @@ class FoodForm extends Component {
                         onChange={this.handleMealChange.bind(this)}/>Meal 3</label>
                     <label><input type="radio" name="mealOptions" value="Snacks"
                         onChange={this.handleMealChange.bind(this)}/>Snacks</label>
-                </p>
-                <p>
+                </div>
+                <div>
                     <button type="submit">SUBMIT</button>
-                </p>
+                </div>
             </form>
         );
     }
