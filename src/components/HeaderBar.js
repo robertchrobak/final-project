@@ -33,9 +33,9 @@ class HeaderBar extends Component {
 
 onSubmit(event) {
     event.preventDefault();
-    this.props.onSubmit(parseInt(this.state.calorieGoal));
+    this.props.onSubmit(Number(this.state.calorieGoal));
     this.setState({
-        calorieGoal: "",
+        calorieGoal: ""
     });
 }
 
