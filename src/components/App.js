@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 import '../index.css';
-import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
 import MealPlan from './MealPlan';
 import ProgressBar from './ProgressBar';
@@ -34,10 +33,6 @@ class App extends Component {
           <ProgressBar />
         </div>
 
-        <div className="FooterBar">
-          <FooterBar />
-        </div>
-        
         <div>
           <Chart className="Chart"/>
         </div>

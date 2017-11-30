@@ -15,7 +15,9 @@ h1 {
 li {
   list-style: none;
 }
-
+input {
+  margin-left: 5px;
+}
 .headerWrapper {
   display: flex;
   flex-direction: row;
@@ -111,24 +113,32 @@ li {
 .FoodForm {
   text-align: center;
   display: flex;
+
 }
 
 .FormLabel {
   color: white;
 
 }
-
+.lineChart {
+  display: none;
+}
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: blue;
   }
 
   h1 {
     text-align: center;
+  }
+  .lineChart {
+    display: block;
+  }
+  .barChart {
+    display: none;
   }
 }
 
@@ -138,10 +148,12 @@ li {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: gray;
   }
 
   h1 {
     text-align: center;
+  }
+  .barChart {
+    display: none;
   }
 }
