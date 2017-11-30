@@ -18,7 +18,7 @@ class HeaderBar extends Component {
           <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
           <input type="number" className="calorieGoal" placeholder="today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
           <button type="submit">ENTER</button>
-          </form>
+          </form> 
           <div>{this.state.calorieGoal}</div>
       </div>
     );

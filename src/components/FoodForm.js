@@ -10,6 +10,8 @@ class FoodForm extends Component {
             name: "",
             mealChoice: ""
         };
+        // 2-way syncing for mealChoice
+        this.handleMealChange = this.handleMealChange.bind(this);
     }
 
     render() {

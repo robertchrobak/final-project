@@ -12,7 +12,9 @@ class Chart extends Component{
         calculatedTotal+=foodItem.calories
       );
 
-    var chartData= {
+
+
+    var chartData = {
           labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets:[
             {
@@ -24,10 +26,11 @@ class Chart extends Component{
                 1800,
                 calculatedTotal,
               ],
-              backgroundColor: ['red','red', 'red', 'red', 'red']
+              backgroundColor: ['red','red', 'red', 'red', 'red'],
             }
-          ]
+          ],
         }
+
 
 
     return (
