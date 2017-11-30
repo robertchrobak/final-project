@@ -19,7 +19,7 @@ class FoodForm extends Component {
                     <label className="FormLabel">Food Item </label>
 
                     {/* add 2-way syncing */}
-                    <input type="text"  onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal"/>
+                    <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal"/>
                 </div>
                 <div>
                     <label className="FormLabel"></label>

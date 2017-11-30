@@ -18,12 +18,11 @@ export function fetchFoodItems(foodSubmission) {
         dispatch(requestFoodItems());
         // $.get("/dummy.json", function(data) {
         var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
-        console.log(url);
         $.get(url, function(data) {
 // find out how to hide API key
 
             // Here is where we dig into the response JSON to find the data we actually need.
-            console.log(data);
+            // console.log(data);
 
 
 
@@ -47,10 +46,10 @@ function receiveFoodItem(foodItem) {
         foodItem
     }
 }
-//
-// function receiveCalorieGoal(calorieGoal) {
-//     return {
-//       type: "RECEIVE_CALORIEGOAL",
-//       calorieGoal
-//     }
-// }
+
+export function fetchCalorieGoal(calorieGoal) {
+    return {
+      type: "RECEIVE_CALORIEGOAL",
+      calorieGoal: calorieGoal
+    }
+}

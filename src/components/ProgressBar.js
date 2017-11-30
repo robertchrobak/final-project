@@ -14,7 +14,7 @@ class ProgressBar extends Component {
       <div className="ProgressBar">
         <h2>Progress bar</h2>
       <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
-      <div>calories: {calculatedTotal} // goal: {calorieGoal}</div>
+      <div>calories: {calculatedTotal} / goal: {calorieGoal}</div>
     </div>
     );
   }

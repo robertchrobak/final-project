@@ -15,10 +15,10 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         foodItems: [ ...state.foodItems, action.foodItem ]
       })
-    // case "RECEIVE_CALORIEGOAL":
-    //   return Object.assign({} state, {
-    //     calorieGoal: calorieGoal
-    //   })
+    case "RECEIVE_CALORIEGOAL":
+      return Object.assign({}, state, {
+        calorieGoal: action.calorieGoal
+      })
     default:
       return state;
   }
