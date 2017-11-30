@@ -118,7 +118,10 @@ input {
 
 .FormLabel {
   color: white;
+}
 
+.CalorieGoalForm {
+  padding: 10;
 }
 .lineChart {
   display: none;

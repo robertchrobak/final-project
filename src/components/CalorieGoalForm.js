@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { fetchCalorieGoal } from '../actions';
 
-class HeaderBar extends Component {
+class CalorieGoalForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,15 +11,12 @@ class HeaderBar extends Component {
   }
   render() {
     return (
-      <div className="headerWrapper">
-        <div className="headerLeft">
-          <h1>TODAY'S MEAL PLAN</h1>
-        </div>
-          <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
+      <div>
+        <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
+          <label>Total Calories</label>
           <input type="number" className="calorieGoal" placeholder="today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
           <button type="submit">ENTER</button>
           </form>
-          <div>{this.state.calorieGoal}</div>
       </div>
     );
   }
@@ -45,4 +42,4 @@ const mapActionsToProps = {
 onSubmit: fetchCalorieGoal
 }
 
-export default connect(null, mapActionsToProps)(HeaderBar);
+export default connect(null, mapActionsToProps)(CalorieGoalForm);
