@@ -18,20 +18,18 @@ class FoodForm extends Component {
         return (
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <div>
-                    <label className="FormLabel">Food Item </label>
-
-                    {/* add 2-way syncing */}
-                    <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal"/>
+                    <label className="FormLabel">Food Item</label>
+                    <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal" value={this.state.name}/>
                 </div>
                 <div>
                     <label className="FormLabel"></label>
-                    <label><input type="radio" name="mealOptions" value="Meal 1"
+                    <label><input type="radio" name="mealOptions" value="Meal 1" checked={this.state.mealChoice === 'Meal 1'}
                         onChange={this.handleMealChange.bind(this)}/>Meal 1</label>
-                    <label><input type="radio" name="mealOptions" value="Meal 2"
+                    <label><input type="radio" name="mealOptions" value="Meal 2" checked={this.state.mealChoice === 'Meal 2'}
                         onChange={this.handleMealChange.bind(this)}/>Meal 2</label>
-                    <label><input type="radio" name="mealOptions" value="Meal 3"
+                    <label><input type="radio" name="mealOptions" value="Meal 3" checked={this.state.mealChoice === 'Meal 3'}
                         onChange={this.handleMealChange.bind(this)}/>Meal 3</label>
-                    <label><input type="radio" name="mealOptions" value="Snacks"
+                    <label><input type="radio" name="mealOptions" value="Snacks" checked={this.state.mealChoice === 'Snacks'}
                         onChange={this.handleMealChange.bind(this)}/>Snacks</label>
                 </div>
                 <div>

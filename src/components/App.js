@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
 import '../index.css';
 import FooterBar from './FooterBar';
-import HeaderBar from './HeaderBar';
 import MealPlan from './MealPlan';
 import ProgressBar from './ProgressBar';
 import FoodForm from './FoodForm';
+import CalorieGoalForm from './CalorieGoalForm';
 import Chart from "./Chart";
-
 
 class App extends Component {
   render() {
@@ -18,8 +16,8 @@ class App extends Component {
           <h1 className="App-title">DAILY CALORIE COUNTER</h1>
         </header>
 
-        <div className="HeaderBar">
-          <HeaderBar />
+        <div className="CalorieGoalForm">
+          <CalorieGoalForm />
         </div>
 
         <div className="foodFormContainer">
@@ -37,7 +35,7 @@ class App extends Component {
         <div className="FooterBar">
           <FooterBar />
         </div>
-        
+
         <div>
           <Chart className="Chart"/>
         </div>

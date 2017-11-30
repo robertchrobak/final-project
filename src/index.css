@@ -115,7 +115,10 @@ li {
 
 .FormLabel {
   color: white;
+}
 
+.CalorieGoalForm {
+  padding: 10;
 }
 
 /*iPad/tablet CSS*/
