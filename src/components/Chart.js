@@ -42,10 +42,6 @@ class Chart extends Component{
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1ff874dcbb23a7c4b4afa450ee8c570c747658e1
     return (
       <div className="chart">
         <div className="lineChart">

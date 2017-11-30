@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import '../index.css';
-<<<<<<< HEAD
-import HeaderBar from './HeaderBar';
-=======
-import FooterBar from './FooterBar';
->>>>>>> 1ff874dcbb23a7c4b4afa450ee8c570c747658e1
 import MealPlan from './MealPlan';
 import ProgressBar from './ProgressBar';
 import FoodForm from './FoodForm';
@@ -36,13 +31,6 @@ class App extends Component {
           <ProgressBar />
         </div>
 
-<<<<<<< HEAD
-=======
-        <div className="FooterBar">
-          <FooterBar />
-        </div>
-
->>>>>>> 1ff874dcbb23a7c4b4afa450ee8c570c747658e1
         <div>
           <Chart className="Chart"/>
         </div>
