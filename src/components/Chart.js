@@ -18,13 +18,22 @@ class Chart extends Component{
             {
               label: 'Calories consumed',
               data:[
-                2000 ,
-                1895 ,
-                3000,
+                1800 ,
+                1900,
+                2100,
                 1800,
                 calculatedTotal,
               ],
-              backgroundColor: ['red','red', 'red', 'red', 'red']
+              backgroundColor: ['red','red', 'red', 'red', 'red'],
+              yAxes: [{
+                           display: true,
+                           ticks: {
+                               beginAtZero: true,
+                               // steps: 10,
+                               // stepValue: 5,
+                               // max: 100
+                           }
+                       }]
             }
           ]
         }
