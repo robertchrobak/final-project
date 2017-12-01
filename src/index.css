@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: orange;
 }
 
@@ -88,16 +88,24 @@ input {
 
 .Meal ul {
   list-style-type: none;
-  font-size: 11px;
+  font-size: 16px;
   margin: 0;
   padding: 5px;
   background-color: white;
   border-radius: 10px;
 }
 
+li {
+  padding: 5px;
+}
+
 .ProgressBar {
   background-color: white;
   padding: 12px;
+}
+
+.progressBarText {
+  text-align: center;
 }
 
 .ProgressBar h2 {
@@ -113,7 +121,13 @@ input {
 .FoodForm {
   text-align: center;
   display: flex;
+}
 
+.foodFormContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .FormLabel {
@@ -121,17 +135,23 @@ input {
 }
 
 .CalorieGoalForm {
-  padding: 10;
+  display: flex;
+  justify-content: center;
 }
 .lineChart {
   display: none;
 }
+
+button {
+  margin-left: 5px;
+}
+
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   h1 {
@@ -150,7 +170,7 @@ input {
   body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   h1 {

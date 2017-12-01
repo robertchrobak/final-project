@@ -26,7 +26,7 @@ class Chart extends Component{
                 calculatedTotal,
                 0
               ],
-              backgroundColor: ['white', 'white', 'white', 'white', 'white'],
+              backgroundColor: ['white', 'white', 'white', 'white', 'white', 'white'],
               yAxes: [{
                            display: true,
                            ticks: {
