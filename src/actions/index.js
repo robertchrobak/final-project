@@ -17,14 +17,17 @@ export function fetchFoodItems(foodSubmission) {
     return function(dispatch) {
         dispatch(requestFoodItems());
         // $.get("/dummy.json", function(data) {
+
+        // ROBERTS KEY AND ID
         var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
+        // CECILS KEY AND ID
+        // var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
+
         $.get(url, function(data) {
 // find out how to hide API key
 
             // Here is where we dig into the response JSON to find the data we actually need.
             // console.log(data);
-
-
 
             const foodItem = { food: data.hits[0].fields.item_name, calories: data.hits[0].fields.nf_calories, meal: foodSubmission.mealChoice };
             dispatch(receiveFoodItem(foodItem));
