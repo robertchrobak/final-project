@@ -138,9 +138,6 @@ li {
   display: flex;
   justify-content: center;
 }
-.lineChart {
-  display: none;
-}
 
 button {
   margin-left: 5px;
@@ -157,12 +154,6 @@ button {
   h1 {
     text-align: center;
   }
-  .lineChart {
-    display: block;
-  }
-  .barChart {
-    display: none;
-  }
 }
 
 /*standard PC CSS*/
@@ -175,8 +166,5 @@ button {
 
   h1 {
     text-align: center;
-  }
-  .barChart {
-    display: none;
   }
 }

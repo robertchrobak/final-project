@@ -19,7 +19,7 @@ class FoodForm extends Component {
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <div>
                     <label className="FormLabel">Food Item</label>
-                    <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="enter food or meal" value={this.state.name}/>
+                    <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="Enter food or meal" value={this.state.name}/>
                 </div>
                 <div>
                     <label className="FormLabel"></label>
