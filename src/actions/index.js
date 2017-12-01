@@ -19,9 +19,14 @@ export function fetchFoodItems(foodSubmission) {
         // $.get("/dummy.json", function(data) {
 
         // ROBERTS KEY AND ID
-        var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
+        // var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
         // CECILS KEY AND ID
         // var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=adfc65c6&appKey=a4e2e4f78ba1945fb06847d48cffed03";
+
+        // ANTHONY'S KEY AND ID
+        var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=bbd09184&appKey=881fdfa0c176bb627ba179d44130e828";
+
+
 
         $.get(url, function(data) {
 // find out how to hide API key
@@ -56,3 +61,17 @@ export function fetchCalorieGoal(calorieGoal) {
       calorieGoal: calorieGoal
     }
 }
+
+// export function removeFoodItem(foodItem) {
+//     return function(dispatch) {
+//         // Use the DELETE method.
+//         $.ajax({
+//             // When building URLs, encodeURIComponent helps keep the URL safe.
+//             url: "/api/contacts/" + encodeURIComponent(id),
+//             method: "DELETE"
+//         }).done(function() {
+//             // After making the change, fetch the updated contact list.
+//             dispatch(fetchContacts());
+//         });
+//     };
+// }
