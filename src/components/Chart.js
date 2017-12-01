@@ -12,8 +12,6 @@ class Chart extends Component{
         calculatedTotal+=foodItem.calories
       );
 
-
-
     var chartData = {
           labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
           datasets:[
@@ -24,7 +22,9 @@ class Chart extends Component{
                 1900,
                 2000,
                 1800,
+                1500,
                 calculatedTotal,
+                0
               ],
               backgroundColor: ['white', 'white', 'white', 'white', 'white'],
               yAxes: [{
@@ -39,8 +39,6 @@ class Chart extends Component{
             }
           ],
         }
-
-
 
     return (
       <div className="chart">
