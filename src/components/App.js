@@ -13,6 +13,7 @@ class App extends Component {
 
         <header className="App-header">
           <h1 className="App-title">DAILY CALORIE COUNTER</h1>
+          <h3 className="Welcome-message">Welcome back, User</h3>
         </header>
 
         <div className="CalorieGoalForm">
@@ -33,6 +34,10 @@ class App extends Component {
 
         <div>
           <Chart className="Chart"/>
+        </div>
+
+        <div className="Footer">
+          <a href="http://www.nutritionix.com/business/api"><img className="AttributionLink" src="/nutritionix250w.png" alt="Powered By Nutritionix"/></a>
         </div>
 
       </div>
