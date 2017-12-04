@@ -13,7 +13,7 @@ import Chart from "./Chart";
         <div className="AppView" >
 
           <header className="App-header">
-            <h1 className="App-title">DAILY CALORIE COUNTER</h1>
+            <h1 className="App-title">CALORIE GALLERY</h1>
             <h3 className="Welcome-message">Welcome back, {this.props.username}</h3>
           </header>
 

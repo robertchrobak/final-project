@@ -10,15 +10,6 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <nav>
-            <span className="Links">
-             <Link to="/login">Login Page</Link> {' | '}
-           </span>
-            <span className="Links">
-              <Link to="/homepage">Home Page</Link>
-            </span>
-          </nav>
-
           <Route exact path ="/" component={Login} />
           <Route exact path ="/login" component={Login} />
           <Route exact path="/homepage" component={HomePage} />
