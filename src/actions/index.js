@@ -71,3 +71,10 @@ export function fetchCalorieGoal(calorieGoal) {
 //         return { foodItems: newFoodItems };
 //     });
 // }
+
+export function loginUser(username) {
+    return {
+        type: "LOGIN_USER",
+        username:username.username
+    }
+}

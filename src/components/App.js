@@ -1,56 +1,41 @@
 import React, { Component } from 'react';
 import '../index.css';
 import { connect } from 'react-redux';
+import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 import Login from "./Login";
-import MealPlan from './MealPlan';
-import ProgressBar from './ProgressBar';
-import FoodForm from './FoodForm';
-import CalorieGoalForm from './CalorieGoalForm';
-import Chart from "./Chart";
+import HomePage from "./HomePage";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Router>
+        <div className="App">
+          <nav>
+            <span className="Links">
+             <Link to="/login">Login Page</Link> {' | '}
+           </span>
+            <span className="Links">
+              <Link to="/homepage">Home Page</Link>
+            </span>
+          </nav>
 
-        <div className="LoginView" >
-          <Login />
+          <Route exact path ="/" component={Login} />
+          <Route exact path ="/login" component={Login} />
+          <Route exact path="/homepage" component={HomePage} />
         </div>
+      </Router>
 
-        <div className="AppView" >
-
-          <header className="App-header">
-            <h1 className="App-title">DAILY CALORIE COUNTER</h1>
-            <h3 className="Welcome-message">Welcome back, {this.props.username}</h3>
-          </header>
-
-          <div className="CalorieGoalForm">
-            <CalorieGoalForm />
-          </div>
-
-          <div className="foodFormContainer">
-            <FoodForm />
-          </div>
-
-          <div className="MealPlan">
-            <MealPlan />
-          </div>
-
-          <div className="ProgressBar">
-            <ProgressBar />
-          </div>
-
-          <div>
-            <Chart className="Chart"/>
-          </div>
-
-          <div className="Footer">
-            <a href="http://www.nutritionix.com/business/api"><img className="AttributionLink" src="/nutritionix250w.png" alt="Powered By Nutritionix"/></a>
-          </div>
-
-        </div>
-
-      </div>
+      // {/* <div className="App">
+      //
+      //   <div className="LoginView" >
+      //     <Login />
+      //   </div>
+      //
+      //   <div className="HomePageView" >
+      //     <HomePage />
+      //   </div>
+      //
+      // </div> */}
     );
   }
 }

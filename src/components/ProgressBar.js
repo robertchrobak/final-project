@@ -13,16 +13,16 @@ class ProgressBar extends Component {
     return (
       <div className="ProgressBar">
         <h2>Progress bar</h2>
-      <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
-      <div className="progressBarText">
-        <div>
-          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100 )}% Complete
+        <div className="progressPercentage">
+          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100 )}%
         </div>
-        <div>
-          Calorie Count: {parseInt(calculatedTotal)} / Calorie Goal: {calorieGoal}
+        <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
+        <div className="progressBarText">
+          <div className="progressBarLabels">
+            <span>Calorie Count: {parseInt(calculatedTotal)}</span><span>Calorie Goal: {calorieGoal}</span>
+          </div>
         </div>
       </div>
-    </div>
     );
   }
 }

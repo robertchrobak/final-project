@@ -15,6 +15,11 @@ h1 {
 .App {
 }
 
+nav {
+  text-align: center;
+  padding-top: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,8 +40,27 @@ a:active {
   border-bottom: 1px solid black;
 }
 
+.progressPercentage {
+  display: flex;
+  justify-content: center;
+}
+
 .AppView {
   /*display: none;*/
+}
+
+.LoginContainer {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.LoginForm {
+  background-color: white;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
 }
 
 .Welcome-message {
@@ -75,6 +99,12 @@ input {
   width: 100%;
   height: 100%;
 }*/
+
+.progressBarLabels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
 
 .calorieGoal input {
   height: 50%;
@@ -217,6 +247,14 @@ a.delete {
     height: auto;
   }
 
+  .LoginForm {
+    background-color: white;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+  }
+
 }
 
 /*standard PC CSS*/
@@ -236,4 +274,11 @@ a.delete {
     height: auto;
   }
 
+  .LoginForm {
+    background-color: white;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+  }
 }
