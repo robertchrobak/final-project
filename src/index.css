@@ -12,6 +12,33 @@ h1 {
   transform:rotate(-90deg);
 }*/
 
+.App {
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: turquoise;
+}
+
+.LoginView {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.AppView {
+  /*display: none;*/
+}
+
 .Welcome-message {
   text-align: center;
 }
@@ -62,7 +89,8 @@ input {
   background-color: rgba(255,165,0,0.6);
   border: 3px solid rgba(255,165,0,0.6);
   border-radius: 10px;
-  margin: 10px;
+  margin: 10px 50px;
+
 }
 
 .Meal button {
@@ -135,7 +163,7 @@ li {
 }
 
 .FormLabel {
-  color: white;
+
 }
 
 .CalorieGoalForm {
