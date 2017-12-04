@@ -8,7 +8,7 @@ class FoodForm extends Component {
         super(props);
         this.state = {
             name: "",
-            mealChoice: ""
+            mealChoice: "Meal 1"
         };
         // 2-way syncing for mealChoice
         this.handleMealChange = this.handleMealChange.bind(this);
@@ -23,14 +23,12 @@ class FoodForm extends Component {
                 </div>
                 <div>
                     <label className="FormLabel"></label>
-                    <label><input type="radio" name="mealOptions" value="Meal 1" checked={this.state.mealChoice === 'Meal 1'}
-                        onChange={this.handleMealChange.bind(this)}/>Meal 1</label>
-                    <label><input type="radio" name="mealOptions" value="Meal 2" checked={this.state.mealChoice === 'Meal 2'}
-                        onChange={this.handleMealChange.bind(this)}/>Meal 2</label>
-                    <label><input type="radio" name="mealOptions" value="Meal 3" checked={this.state.mealChoice === 'Meal 3'}
-                        onChange={this.handleMealChange.bind(this)}/>Meal 3</label>
-                    <label><input type="radio" name="mealOptions" value="Snacks" checked={this.state.mealChoice === 'Snacks'}
-                        onChange={this.handleMealChange.bind(this)}/>Snacks</label>
+                      <select value={this.state.mealChoice} onChange={this.handleMealChange.bind(this)}>
+                        <option value="Meal 1" selected>Meal 1</option>
+                        <option value="Meal 2">Meal 2</option>
+                        <option value="Meal 3">Meal 3</option>
+                        <option value="Snacks">Snacks</option>
+                      </select>
                 </div>
                 <div>
                     <button type="submit">SUBMIT</button>
