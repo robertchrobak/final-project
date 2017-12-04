@@ -13,9 +13,12 @@ class Login extends Component{
     }
   }
 
+nextPath(path) {
+  this.props.history.push(path);
+}
+
   render(){
     return(
-      <Router>
       <div className="LoginContainer">
         <h1>Logo Goes Here</h1>
         <form className="LoginForm" onSubmit={this.onSubmit.bind(this)}>
@@ -29,19 +32,14 @@ class Login extends Component{
             <input type="password" value={this.state.password} onChange={this.handlePasswordChange.bind(this)} placeholder="Password" />
           </p>
 
-            <Link to="/homepage"><button type="submit">LOG IN</button></Link>
+            <button type="submit" onClick={() => this.nextPath('/homepage')}>LOG IN</button>
 
             {/* <button type="submit">LOG IN</button> */}
             <p>
               <a href="http://google.com">Forgot your password?</a>
             </p>
         </form>
-        {/* <Route exact path ="/" component={Login} />
-        <Route exact path ="/login" component={Login} /> */}
-        <Route exact path="/homepage" component={HomePage} />
       </div>
-    </Router>
-
     );
   }
 
