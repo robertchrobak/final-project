@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { removeFoodItem } from '../actions';
 
 class MealPlan extends Component {
 
@@ -56,12 +57,20 @@ class MealPlan extends Component {
     );
   }
 
-onDelete(index) {
-  console.log(index);
-}
+  onDelete(index) {
+      // event.preventDefault();
+      this.props.removeFoodItem(index);
+      // this.setState({
+      //     name: "",
+      //     mealChoice: "Meal 1"
+      // });
+  }
 
 }
 
+const mapActionsToProps = {
+  removeFoodItem
+}
 
 function mapStateToProps(state) {
     return {
@@ -69,4 +78,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(MealPlan);
+export default connect(mapStateToProps, mapActionsToProps)(MealPlan);
