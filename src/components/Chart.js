@@ -23,7 +23,7 @@ class Chart extends Component{
                 2000,
                 1800,
                 1500,
-                calculatedTotal,
+                parseInt(calculatedTotal),
                 0
               ],
               backgroundColor: ['white', 'white', 'white', 'white', 'white', 'white'],

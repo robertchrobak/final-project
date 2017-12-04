@@ -13,16 +13,16 @@ class MealPlan extends Component {
     this.props.foodItems.forEach((foodItem, index) => {
 
       if(foodItem.meal === "Meal 1") {
-        meal1Items.push(<li key={index}>{foodItem.food} - {foodItem.calories} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
+        meal1Items.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
       }
       if(foodItem.meal === "Meal 2") {
-        meal2Items.push(<li key={index}>{foodItem.food} - {foodItem.calories} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
+        meal2Items.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
       }
       if(foodItem.meal === "Meal 3") {
-        meal3Items.push(<li key={index}>{foodItem.food} - {foodItem.calories} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
+        meal3Items.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
       }
       if(foodItem.meal === "Snacks") {
-        snackItems.push(<li key={index}>{foodItem.food} - {foodItem.calories} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
+        snackItems.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></li>);
       }
     });
 
