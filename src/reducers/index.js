@@ -1,8 +1,11 @@
 const INITIAL_STATE = {
   foodItems: [
   ],
-  calorieGoal: null,
+  calorieGoal: 2000,
   isLoading: true,
+  showLogin: true,
+  showApp: false,
+  username: "usernameplaceholder"
 }
 
 export default function(state = INITIAL_STATE, action) {
