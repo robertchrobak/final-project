@@ -78,3 +78,10 @@ export function loginUser(username) {
         username:username.username
     }
 }
+
+export function removeFoodItem(index) {
+    return {
+      type: "REMOVE_FOOD_ITEM",
+      index
+    }
+}

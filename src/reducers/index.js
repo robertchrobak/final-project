@@ -18,6 +18,13 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         calorieGoal: action.calorieGoal
       })
+      case "REMOVE_FOOD_ITEM":
+            const newFoodItems = state.foodItems.slice(0);
+            newFoodItems.splice(action.index, 1);
+
+            return Object.assign({}, state, {
+                foodItems: newFoodItems
+            });
     default:
       return state;
   }

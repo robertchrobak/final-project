@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { removeFoodItem } from '../actions';
 
 class MealPlan extends Component {
 
@@ -13,16 +14,16 @@ class MealPlan extends Component {
     this.props.foodItems.forEach((foodItem, index) => {
 
       if(foodItem.meal === "Meal 1") {
-        meal1Items.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#"> X</a></li>);
+        meal1Items.push(<li key={index}>{foodItem.food} - {parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, index)} className="delete" href="#"> X</a></li>);
       }
       if(foodItem.meal === "Meal 2") {
-        meal2Items.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></div></li>);
+        meal2Items.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, index)} className="delete" href="#">X</a></div></li>);
       }
       if(foodItem.meal === "Meal 3") {
-        meal3Items.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></div></li>);
+        meal3Items.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, index)} className="delete" href="#">X</a></div></li>);
       }
       if(foodItem.meal === "Snacks") {
-        snackItems.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, foodItem)} className="delete" href="#">X</a></div></li>);
+        snackItems.push(<li key={index}>{foodItem.food} <div>{parseInt(foodItem.calories)} calories<a onClick={this.onDelete.bind(this, index)} className="delete" href="#">X</a></div></li>);
       }
     });
 
@@ -56,12 +57,20 @@ class MealPlan extends Component {
     );
   }
 
-onDelete(foodItem) {
-  console.log(foodItem);
-}
+  onDelete(index) {
+      // event.preventDefault();
+      this.props.removeFoodItem(index);
+      // this.setState({
+      //     name: "",
+      //     mealChoice: "Meal 1"
+      // });
+  }
 
 }
 
+const mapActionsToProps = {
+  removeFoodItem
+}
 
 function mapStateToProps(state) {
     return {
@@ -69,4 +78,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(MealPlan);
+export default connect(mapStateToProps, mapActionsToProps)(MealPlan);
