@@ -15,11 +15,11 @@ class ProgressBar extends Component {
         <h2>Progress bar</h2>
       <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
       <div className="progressBarText">
-        <div>
-          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100 )}% Complete
+        <div className="progressBarLabels">
+          <span>Calorie Count: {parseInt(calculatedTotal)}</span><span>Calorie Goal: {calorieGoal}</span>
         </div>
         <div>
-          Calorie Count: {parseInt(calculatedTotal)} / Calorie Goal: {calorieGoal}
+          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100 )}%
         </div>
       </div>
     </div>
