@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
+import { connect } from 'react-redux';
+import Login from "./Login";
 import MealPlan from './MealPlan';
 import ProgressBar from './ProgressBar';
 import FoodForm from './FoodForm';
@@ -11,33 +13,41 @@ class App extends Component {
     return (
       <div className="App">
 
-        <header className="App-header">
-          <h1 className="App-title">DAILY CALORIE COUNTER</h1>
-          <h3 className="Welcome-message">Welcome back, User</h3>
-        </header>
-
-        <div className="CalorieGoalForm">
-          <CalorieGoalForm />
+        <div className="LoginView" >
+          <Login />
         </div>
 
-        <div className="foodFormContainer">
-          <FoodForm />
-        </div>
+        <div className="AppView" >
 
-        <div className="MealPlan">
-          <MealPlan />
-        </div>
+          <header className="App-header">
+            <h1 className="App-title">DAILY CALORIE COUNTER</h1>
+            <h3 className="Welcome-message">Welcome back, {this.props.username}</h3>
+          </header>
 
-        <div className="ProgressBar">
-          <ProgressBar />
-        </div>
+          <div className="CalorieGoalForm">
+            <CalorieGoalForm />
+          </div>
 
-        <div>
-          <Chart className="Chart"/>
-        </div>
+          <div className="foodFormContainer">
+            <FoodForm />
+          </div>
 
-        <div className="Footer">
-          <a href="http://www.nutritionix.com/business/api"><img className="AttributionLink" src="/nutritionix250w.png" alt="Powered By Nutritionix"/></a>
+          <div className="MealPlan">
+            <MealPlan />
+          </div>
+
+          <div className="ProgressBar">
+            <ProgressBar />
+          </div>
+
+          <div>
+            <Chart className="Chart"/>
+          </div>
+
+          <div className="Footer">
+            <a href="http://www.nutritionix.com/business/api"><img className="AttributionLink" src="/nutritionix250w.png" alt="Powered By Nutritionix"/></a>
+          </div>
+
         </div>
 
       </div>
@@ -45,4 +55,12 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+    return {
+        username: state.username
+    }
+}
+
+// export default App;
+
+export default connect(mapStateToProps)(App);
