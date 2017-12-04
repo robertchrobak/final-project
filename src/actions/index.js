@@ -62,18 +62,14 @@ export function fetchCalorieGoal(calorieGoal) {
     }
 }
 
-// export function removeFoodItem(foodItem) {
-//     return function(dispatch) {
-//         // Use the DELETE method.
-//         $.ajax({
-//             // When building URLs, encodeURIComponent helps keep the URL safe.
-//             url: "/api/contacts/" + encodeURIComponent(id),
-//             method: "DELETE"
-//         }).done(function() {
-//             // After making the change, fetch the updated contact list.
-//             dispatch(fetchContacts());
-//         });
-//     };
+// export function removeFoodItem(index) {
+//     this.setState(prevState => {
+//         // Copy contacts array before modifying. We should not modify the original.
+//         const newFoodItems = prevState.foodItems.slice();
+//         foodItems.splice(index, 1); // Remove the item at this index.
+//         // update the contacts in state
+//         return { foodItems: newFoodItems };
+//     });
 // }
 
 export function loginUser(username) {
