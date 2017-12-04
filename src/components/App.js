@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 import { connect } from 'react-redux';
-import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Login from "./Login";
 import HomePage from "./HomePage";
 

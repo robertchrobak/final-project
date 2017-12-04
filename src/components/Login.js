@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Link, Redirect} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loginUser } from '../actions';
-import HomePage from './HomePage';
 
 class Login extends Component{
   constructor(props){
