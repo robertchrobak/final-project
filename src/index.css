@@ -164,6 +164,13 @@ img {
   width: 150px;
   height: auto;
 }
+.Footer {
+  background-color: white;
+}
+
+a.delete {
+  color: red;
+}
 
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {

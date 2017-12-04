@@ -27,6 +27,7 @@ class Chart extends Component{
                 0
               ],
               backgroundColor: ['white', 'white', 'white', 'white', 'white', 'white'],
+              hoverBackgroundColor: ['gold', 'gold','gold','gold','gold','gold', 'gold'],
               yAxes: [{
                            display: true,
                            ticks: {
