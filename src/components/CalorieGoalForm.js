@@ -13,7 +13,7 @@ class CalorieGoalForm extends Component {
     return (
       <div>
         <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
-          <label>Total Calories</label>
+          {/* <label>Total Calories</label> */}
           <input type="number" className="calorieGoal" placeholder="Today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
           <button type="submit">ENTER</button>
           </form>
