@@ -14,7 +14,8 @@ import Chart from "./Chart";
 
           <header className="App-header">
             <h1 className="App-title">CALORIE GALLERY</h1>
-            <h3 className="Welcome-message">Welcome back, {this.props.username}</h3>
+            {/* <h3 className="Welcome-message">Welcome back, {this.props.username}</h3> */}
+            <h3 className="Welcome-message">Welcome!</h3>
           </header>
 
           <div className="CalorieGoalForm">

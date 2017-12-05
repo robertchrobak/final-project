@@ -186,6 +186,7 @@ li {
 .ProgressBar {
   background-color: white;
   padding: 12px;
+  margin-top: -4%
 }
 
 .progressBarText {
@@ -289,12 +290,13 @@ a.delete {
   h1 {
     text-align: center;
   }
-
   .AttributionLink {
     width: inherit;
     height: auto;
   }
-
+  h3.Welcome-Message {
+    font-size: 2rem;
+  }
   .LoginForm {
     background-color: white;
     width: 40vw;
@@ -325,6 +327,11 @@ a.delete {
   .foodFormContainer {
     display: flex;
     flex-flow: row;
+  }
+  canvas{
+    width:1000px !important;
+    height:600px !important;
+    margin: 0 auto;
   }
 
 }

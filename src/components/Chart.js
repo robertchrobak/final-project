@@ -13,7 +13,7 @@ class Chart extends Component{
       );
 
     var chartData = {
-          labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          labels: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'],
           datasets:[
             {
               label: 'Calories consumed',
@@ -31,7 +31,7 @@ class Chart extends Component{
               yAxes: [{
                            display: true,
                            ticks: {
-                               beginAtZero: true,
+                              beginAtZero: true,
                                // steps: 10,
                                // stepValue: 5,
                                // max: 100
@@ -46,13 +46,15 @@ class Chart extends Component{
         <Bar
           data={chartData} //calling the data that's in the state
           options={{
-          title: {
-            display: true,
-            text: 'Weekly Progress',
-            fontSize: 26,
-            fontColor: 'black',
-            fontFamily: 'Lato'
-          },
+            responsive: true,
+            // maintainAspectRatio: false,
+            title: {
+              display: true,
+              text: 'Weekly Progress',
+              fontSize: 25,
+              fontColor: 'black',
+              fontFamily: 'Lato'
+            },
 
           }}
         />
