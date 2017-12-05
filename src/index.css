@@ -132,6 +132,7 @@ button:hover {
   height: 50%;
   border: 0;
 }
+
 .MealPlan {
   background-color: white;
   padding: 5px;
@@ -141,8 +142,7 @@ button:hover {
   background-color: rgba(255,165,0,0.6);
   border: 3px solid rgba(255,165,0,0.6);
   border-radius: 10px;
-  margin: 10px 50px;
-
+  margin: 10px 10px;
 }
 
 .Meal button {
@@ -194,6 +194,7 @@ li {
 
 .ProgressBar h2 {
   color: rgba(186,102,0,1);
+  text-align: center;
 }
 
 .ProgressBar progress {
@@ -300,4 +301,29 @@ a.delete {
     margin-right: auto;
     padding: 10px 0px;
   }
+
+  .Meal {
+    background-color: rgba(255,165,0,0.6);
+    border: 3px solid rgba(255,165,0,0.6);
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 40vw;
+  }
+
+  .MealPlan {
+    background-color: white;
+    padding: 5px;
+    display: flex;
+  }
+  .CalorieGoalForm {
+    display: flex;
+    flex-flow: row;
+
+  }
+
+  .foodFormContainer {
+    display: flex;
+    flex-flow: row;
+  }
+
 }
