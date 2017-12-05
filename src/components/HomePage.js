@@ -5,6 +5,7 @@ import ProgressBar from './ProgressBar';
 import FoodForm from './FoodForm';
 import CalorieGoalForm from './CalorieGoalForm';
 import Chart from "./Chart";
+import AutoSuggestForm from "./AutoSuggestForm";
 
 
   class HomePage extends Component {
@@ -23,6 +24,10 @@ import Chart from "./Chart";
 
           <div className="foodFormContainer">
             <FoodForm />
+          </div>
+
+          <div className="foodFormContainer">
+            <AutoSuggestForm />
           </div>
 
           <div className="MealPlan">
