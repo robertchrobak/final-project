@@ -47,6 +47,7 @@ class Chart extends Component{
           data={chartData} //calling the data that's in the state
           options={{
             responsive: true,
+            barThickness: 20,
             // maintainAspectRatio: false,
             title: {
               display: true,
