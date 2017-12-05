@@ -11,7 +11,7 @@ class CalorieGoalForm extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="KnowYourCals">
         <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
           {/* <label>Total Calories</label> */}
           <input type="number" className="calorieGoal" placeholder="Today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
