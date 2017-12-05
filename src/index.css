@@ -249,6 +249,7 @@ a.delete {
 .targetLink {
   font-size: 10px;
 }
+
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
   body {
