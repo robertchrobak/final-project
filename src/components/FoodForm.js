@@ -18,13 +18,13 @@ class FoodForm extends Component {
         return (
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <div>
-                    <label className="FormLabel">Food Item</label>
+                    {/* <label className="FormLabel">Food Item</label> */}
                     <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="Enter food or meal" value={this.state.name}/>
                 </div>
                 <div>
                     <label className="FormLabel"></label>
                       <select value={this.state.mealChoice} onChange={this.handleMealChange.bind(this)}>
-                        <option value="Meal 1" selected>Meal 1</option>
+                        <option defaultValue="Meal 1">Meal 1</option>
                         <option value="Meal 2">Meal 2</option>
                         <option value="Meal 3">Meal 3</option>
                         <option value="Snacks">Snacks</option>

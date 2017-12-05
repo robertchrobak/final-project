@@ -36,7 +36,7 @@ class Chart extends Component{
                                // stepValue: 5,
                                // max: 100
                            }
-                       }]
+                       }],
             }
           ],
         }
@@ -49,8 +49,9 @@ class Chart extends Component{
           title: {
             display: true,
             text: 'Weekly Progress',
-            fontSize: 30,
-            fontColor: 'black'
+            fontSize: 26,
+            fontColor: 'black',
+            fontFamily: 'Lato'
           },
 
           }}

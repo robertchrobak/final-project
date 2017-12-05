@@ -25,7 +25,7 @@ import Chart from "./Chart";
             <FoodForm />
           </div>
 
-          <div className="MealPlan">
+          <div className="">
             <MealPlan />
           </div>
 

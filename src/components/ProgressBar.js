@@ -14,7 +14,7 @@ class ProgressBar extends Component {
       <div className="ProgressBar">
         <h2>Progress bar</h2>
         <div className="progressPercentage">
-          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100 )}%
+          {parseInt((parseInt(calculatedTotal) / calorieGoal) * 100)}%
         </div>
         <progress value={calculatedTotal} max={calorieGoal}>yeah</progress>
         <div className="progressBarText">
