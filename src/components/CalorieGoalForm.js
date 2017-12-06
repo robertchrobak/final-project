@@ -15,7 +15,7 @@ class CalorieGoalForm extends Component {
         <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
           {/* <label>Total Calories</label> */}
           <input type="number" className="calorieGoal" placeholder="Today's calorie goal" value={this.state.calorieGoal} onChange={this.handleCalorieGoalChange.bind(this)}/>
-          <button type="submit">ENTER</button>
+          <button className="enterButton" type="submit">ENTER</button>
           </form>
           <a href="https://www.bodybuilding.com/fun/macronutcal.htm" target="blank" class="targetLink">Don't know your calorie goal?</a>
       </div>

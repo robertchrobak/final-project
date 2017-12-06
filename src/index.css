@@ -123,7 +123,7 @@ button:hover {
 }
 
 .FoodFormButton {
-  display: inline;
+  display: block;
 }
 
 .headerWrapper {
@@ -147,12 +147,14 @@ button:hover {
   background-color: white;
 }
 
-/*.calorieGoal {
-  background-color: white;
-  width: 100%;
+.calorieGoal {
+  width: 75%;
   height: 100%;
-}*/
-
+}
+.enterButton {
+  display: block;
+  margin-left: 17%;
+}
 .progressBarLabels {
   display: flex;
   justify-content: space-between;
@@ -391,6 +393,8 @@ select {
     padding: 5px;
     /*display: flex;*/
   }
+
+
 }
 
 /*standard PC CSS*/
@@ -504,6 +508,9 @@ select {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 200px;
+  }
+  .FoodFormButton {
+    display: inline;
   }
 
 }
