@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { removeFoodItem } from '../actions';
+import "font-awesome/css/font-awesome.css";
 
 class MealPlan extends Component {
 
@@ -14,16 +15,16 @@ class MealPlan extends Component {
     this.props.foodItems.forEach((foodItem, index) => {
 
       if(foodItem.meal === "Meal 1") {
-        meal1Items.push(<li key={index}><span class="foodItem">{foodItem.food}</span> &mdash; {parseInt(foodItem.calories)} calories <a onClick={this.onDelete.bind(this, index)} className="delete" href="">X</a></li>);
+        meal1Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
       }
       if(foodItem.meal === "Meal 2") {
-        meal2Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <a onClick={this.onDelete.bind(this, index)} className="delete" href="">X</a></li>);
+        meal2Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
       }
       if(foodItem.meal === "Meal 3") {
-        meal3Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <a onClick={this.onDelete.bind(this, index)} className="delete" href="">X</a></li>);
+        meal3Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
       }
       if(foodItem.meal === "Snacks") {
-        snackItems.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <a onClick={this.onDelete.bind(this, index)} className="delete" href="">X</a></li>);
+        snackItems.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
       }
     });
 

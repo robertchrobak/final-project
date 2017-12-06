@@ -206,7 +206,7 @@ button:hover {
 
 .Meal ul {
   list-style-type: none;
-  font-size: 12px;
+  font-size: 1rem;
   margin: 0;
   padding: 5px;
   background-color: white;
@@ -420,6 +420,14 @@ a.delete {
 
   button:active {
     background-color: aqua;
+  }
+
+  button.delete {
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px;
+    letter-spacing: 0px;
   }
 
   select {
