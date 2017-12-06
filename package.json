@@ -24,5 +24,4 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && cd build && mv index.html 200.html && surge . --domain caloriegallery.surge.sh"
   }
-  
 }

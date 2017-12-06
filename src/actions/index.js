@@ -25,9 +25,9 @@ export function fetchFoodItems(foodSubmission) {
 
         // ANTHONY'S KEY AND ID
         var url = "https://api.nutritionix.com/v1_1/search/"+foodSubmission.name+"?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=bbd09184&appKey=881fdfa0c176bb627ba179d44130e828";
+// this is the ENDPOINT ^^^
 
-
-
+// This is the Read in CRUD .
         $.get(url, function(data) {
 // find out how to hide API key
 
