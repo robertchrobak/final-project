@@ -10,7 +10,6 @@ class FoodForm extends Component {
             name: "",
             mealChoice: "Meal 1"
         };
-        // 2-way syncing for mealChoice
         this.handleMealChange = this.handleMealChange.bind(this);
     }
 
@@ -18,7 +17,7 @@ class FoodForm extends Component {
         return (
             <form className="FoodForm" onSubmit={this.onSubmit.bind(this)}>
                 <div>
-                    {/* <label className="FormLabel">Food Item</label> */}
+                    {/* 2-way syncing for mealChoice is value={this.state.name}*/}
                     <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="Enter food or meal" value={this.state.name}/>
                     <button className="FoodFormButton" type="submit">SUBMIT</button>
                 </div>
