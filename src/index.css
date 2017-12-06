@@ -65,7 +65,7 @@ a:active {
 }
 
 .AppView {
-  /*display: none;*/
+  text-align: center;
 }
 
 .LoginContainer {
@@ -85,6 +85,10 @@ a:active {
   box-shadow: 5px 5px 25px #424242;
 }
 
+.LoginForm input {
+  width: 30vw;
+}
+
 .Welcome-message {
   text-align: center;
 }
@@ -94,14 +98,13 @@ li {
 }
 
 input {
-  margin-left: 5px;
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
   border: none;
   border-bottom: 1px solid lightgray;
   padding: 10px;
   border-radius: 10px;
-  width: 20vw;
+  width: 85vw;
 }
 
 input:focus {
@@ -123,7 +126,7 @@ button:hover {
 }
 
 .FoodFormButton {
-  display: inline;
+  display: block;
 }
 
 .headerWrapper {
@@ -314,6 +317,8 @@ button {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  display: block;
+  margin: 10px auto;
 }
 
 button:active {
@@ -408,6 +413,10 @@ progress[value]::-webkit-progress-value {
     padding: 5px;
     /*display: flex;*/
   }
+
+  input {
+    width: 50vw;
+  }
 }
 
 /*standard PC CSS*/
@@ -468,6 +477,10 @@ progress[value]::-webkit-progress-value {
     margin-top: 0%
   }
 
+  input {
+    width: 20vw;
+  }
+
   button {
     border-radius: 10px;
     background-color: green;
@@ -522,5 +535,10 @@ progress[value]::-webkit-progress-value {
     white-space: nowrap;
     width: 200px;
   }
+
+.FoodFormButton {
+  display: inline;
+}
+
 
 }
