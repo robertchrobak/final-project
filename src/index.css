@@ -5,12 +5,27 @@ body {
   background-color: orange;
 }
 
+header {
+  border-bottom: 3px
+}
+
 h1 {
   text-align: center;
 }
 /*h2 {
   transform:rotate(-90deg);
 }*/
+
+.logoLogin {
+  width: 250px;
+  height: auto;
+  margin-top: 12px;
+}
+
+.logoHomePage {
+  width: 250px;
+  height: auto;
+}
 
 .App {
 }
@@ -61,10 +76,13 @@ a:active {
 
 .LoginForm {
   background-color: white;
+  border-radius: 10px;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   padding: 10px 0px;
+  box-shadow: 5px 5px 25px #424242;
 }
 
 .Welcome-message {
@@ -77,8 +95,13 @@ li {
 
 input {
   margin-left: 5px;
-  font-size: 12px;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20vw;
 }
 
 input:focus {
@@ -97,6 +120,10 @@ button {
 
 button:hover {
   background-color: rgba(182,100,24,1);
+}
+
+.FoodFormButton {
+  display: inline;
 }
 
 .headerWrapper {
@@ -135,6 +162,7 @@ button:hover {
 .calorieGoal input {
   height: 50%;
   border: 0;
+  border-radius: 10px
 }
 
 .MealPlan {
@@ -168,6 +196,7 @@ button:hover {
   text-align: right;
   font-style: Arial;
   margin: 5px;
+  border-radius: 10px
 }
 
 .Meal input::placeholder {
@@ -209,8 +238,8 @@ li {
 }
 
 .FoodForm {
-  text-align: center;
-  display: flex;
+  /*text-align: center;
+  display: flex;*/
 }
 
 .foodFormContainer {
@@ -237,8 +266,8 @@ button {
 }
 
 img {
-  background-color: lightgray;
-  border-radius: 20px;
+  /*background-color: lightgray;
+  border-radius: 20px;*/
 }
 
 .AttributionLink {
@@ -253,7 +282,16 @@ a.delete {
   color: red;
 }
 .targetLink {
-  font-size: 10px;
+  font-size: 1rem;
+}
+
+.MealSelectContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.calorieCalculatorLink {
+  font-size: 20px;
 }
 
 /*iPad/tablet CSS*/
@@ -341,7 +379,6 @@ a.delete {
   .CalorieGoalForm {
     display: flex;
     flex-flow: row;
-
   }
 
   .foodFormContainer {
@@ -356,6 +393,54 @@ a.delete {
   }*/
   .ProgressBar {
     margin-top: 0%
+  }
+
+  button {
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+    overflow: hidden;
+
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  button:active {
+    background-color: aqua;
+  }
+
+  select {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    color: #555;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
   }
 
 }

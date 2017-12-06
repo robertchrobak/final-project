@@ -13,9 +13,9 @@ import Chart from "./Chart";
         <div className="AppView" >
 
           <header className="App-header">
-            <h1 className="App-title">CALORIE GALLERY</h1>
+            <h1 className="App-title"><img className="logoHomePage" src="/logo1.png" alt="Calorie Gallery"/></h1>
             {/* <h3 className="Welcome-message">Welcome back, {this.props.username}</h3> */}
-            <h3 className="Welcome-message">Welcome!</h3>
+            <h2 className="Welcome-message">Welcome!</h2>
           </header>
 
           <div className="CalorieGoalForm">

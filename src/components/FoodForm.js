@@ -20,8 +20,9 @@ class FoodForm extends Component {
                 <div>
                     {/* <label className="FormLabel">Food Item</label> */}
                     <input type="text" onChange={this.handleNameChange.bind(this)} placeholder="Enter food or meal" value={this.state.name}/>
+                    <button className="FoodFormButton" type="submit">SUBMIT</button>
                 </div>
-                <div>
+                <div className="MealSelectContainer">
                     <label className="FormLabel"></label>
                       <select value={this.state.mealChoice} onChange={this.handleMealChange.bind(this)}>
                         <option defaultValue="Meal 1">Meal 1</option>
@@ -29,9 +30,6 @@ class FoodForm extends Component {
                         <option value="Meal 3">Meal 3</option>
                         <option value="Snacks">Snacks</option>
                       </select>
-                </div>
-                <div>
-                    <button type="submit">SUBMIT</button>
                 </div>
             </form>
         );

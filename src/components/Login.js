@@ -18,9 +18,9 @@ nextPath(path) {
   render(){
     return(
       <div className="LoginContainer">
-        <h1>Logo Goes Here</h1>
+        <img className="logoLogin" src="/logo1.png" alt="Calorie Gallery"/>
         <form className="LoginForm" onSubmit={this.onSubmit.bind(this)}>
-          <h2>Please Log In</h2>
+          <h1>Please Log In</h1>
           <p>
             <label className="form__label"></label>
             <input type="text" value={this.state.username} onChange={this.handleUsernameChange.bind(this)} placeholder="Username" />
