@@ -18,7 +18,7 @@ nextPath(path) {
   render(){
     return(
       <div className="LoginContainer">
-        <img className="logoLogin" src="/logo1.png" alt="Calorie Gallery"/>
+        <img className="logoLogin" src="/slice4.png" alt="Calorie Gallery"/>
         <form className="LoginForm" onSubmit={this.onSubmit.bind(this)}>
           <h1>Please Log In</h1>
           <p>

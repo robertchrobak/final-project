@@ -17,7 +17,7 @@ h1 {
 }*/
 
 .logoLogin {
-  width: 250px;
+  width: 350px;
   height: auto;
   margin-top: 12px;
 }
@@ -80,7 +80,7 @@ a:active {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 10px 0px;
   box-shadow: 5px 5px 25px #424242;
 }
@@ -296,6 +296,15 @@ a.delete {
 
 .calorieCalculatorLink {
   font-size: 20px;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: teal;
+  text-decoration: none;
 }
 
 button {
