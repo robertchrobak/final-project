@@ -26,8 +26,8 @@ class Chart extends Component{
                 parseInt(calculatedTotal),
                 0
               ],
-              backgroundColor: ['white', 'white', 'white', 'white', 'white', 'white'],
-              hoverBackgroundColor: ['gold', 'gold','gold','gold','gold','gold', 'gold'],
+              backgroundColor: ['#fff', '#fff', '#fff', 'white', 'white', 'white'],
+              hoverBackgroundColor: ['rgba(182,100,24,1)', 'rgba(182,100,24,1)','rgba(182,100,24,1)','rgba(182,100,24,1)','rgba(182,100,24,1)','rgba(182,100,24,1)', 'rgba(182,100,24,1)'],
               yAxes: [{
                            display: true,
                            ticks: {

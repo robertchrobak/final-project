@@ -16,6 +16,11 @@ h1 {
   transform:rotate(-90deg);
 }*/
 
+.chart {
+  background-color: rgba(254,200,126,1);
+  border: 2px solid rgba(251,163,58,1);
+}
+
 .logoLogin {
   width: 350px;
   height: auto;
