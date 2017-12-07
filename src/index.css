@@ -338,8 +338,8 @@ button.delete {
   background-color: red;
   padding: 5px;
   border-radius: 5px;
-  margin: 0px;
   letter-spacing: 0px;
+  margin: 0px auto;
 }
 
 select {
@@ -380,6 +380,8 @@ progress[value]::-webkit-progress-value {
   background-color: rgba(254,200,126,1);
   border-radius: 10px;
 }
+
+hey
 
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
@@ -545,9 +547,9 @@ progress[value]::-webkit-progress-value {
     width: 200px;
   }
 
-.FoodFormButton {
-  display: inline;
-}
+  .FoodFormButton {
+    display: inline;
+  }
 
 
 }
