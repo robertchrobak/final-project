@@ -15,7 +15,7 @@ class MealPlan extends Component {
     this.props.foodItems.forEach((foodItem, index) => {
 
       if(foodItem.meal === "Meal 1") {
-        meal1Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
+        meal1Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg" idName="deletebutton"></i></button></p></li>);
       }
       if(foodItem.meal === "Meal 2") {
         meal2Items.push(<li key={index}>{foodItem.food} &mdash; {parseInt(foodItem.calories)} calories <p><button onClick={this.onDelete.bind(this, index)} className="delete" href=""><i className="fa fa-trash fa-lg"></i></button></p></li>);
