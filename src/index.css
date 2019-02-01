@@ -12,13 +12,10 @@ header {
 h1 {
   text-align: center;
 }
-/*h2 {
-  transform:rotate(-90deg);
-}*/
 
 .chart {
-  background-color: rgba(254,200,126,1);
-  border: 2px solid rgba(251,163,58,1);
+  background-color: rgba(254, 200, 126, 1);
+  border: 2px solid rgba(251, 163, 58, 1);
 }
 
 .logoLogin {
@@ -30,9 +27,6 @@ h1 {
 .logoHomePage {
   width: 250px;
   height: auto;
-}
-
-.App {
 }
 
 nav {
@@ -113,7 +107,7 @@ input {
 }
 
 input:focus {
-  background-color: rgba(254,200,126,1);
+  background-color: rgba(254, 200, 126, 1);
 }
 
 option {
@@ -127,7 +121,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(182,100,24,1);
+  background-color: rgba(182, 100, 24, 1);
 }
 
 .FoodFormButton {
@@ -155,12 +149,6 @@ button:hover {
   background-color: white;
 }
 
-/*.calorieGoal {
-  background-color: white;
-  width: 100%;
-  height: 100%;
-}*/
-
 .progressBarLabels {
   display: flex;
   justify-content: space-between;
@@ -179,28 +167,28 @@ button:hover {
 }
 
 .Meal {
-  background-color: rgba(255,165,0,0.6);
-  border: 3px solid rgba(255,165,0,0.6);
+  background-color: rgba(255, 165, 0, 0.6);
+  border: 3px solid rgba(255, 165, 0, 0.6);
   border-radius: 10px;
   margin: 10px 0px;
   text-align: center;
 }
 
 .Meal button {
-  background-color: rgba(186,102,0,1);
+  background-color: rgba(186, 102, 0, 1);
   color: white;
   border: 0;
 }
 
 .Meal h2 {
-  color: rgba(186,102,0,1);
+  color: rgba(186, 102, 0, 1);
   padding: 8px;
   display: inline-block;
 }
 
 .Meal input {
-  background-color: rgba(255,165,0,0.6);
-  color: rgba(186,102,0,1);
+  background-color: rgba(255, 165, 0, 0.6);
+  color: rgba(186, 102, 0, 1);
   border: 0;
   text-align: right;
   font-style: Arial;
@@ -209,7 +197,7 @@ button:hover {
 }
 
 .Meal input::placeholder {
-  color: rgba(186,102,0,1);
+  color: rgba(186, 102, 0, 1);
 }
 
 .Meal ul {
@@ -236,7 +224,7 @@ li {
 }
 
 .ProgressBar h2 {
-  color: rgba(186,102,0,1);
+  color: rgba(186, 102, 0, 1);
   text-align: center;
 }
 
@@ -244,11 +232,6 @@ li {
   color: orange;
   height: 10px;
   width: 100%;
-}
-
-.FoodForm {
-  /*text-align: center;
-  display: flex;*/
 }
 
 .foodFormContainer {
@@ -271,18 +254,14 @@ button {
   text-align: center;
   padding: 20px;
   background-color: white;
-  background-color: rgba(255,165,0,0.6);
-}
-
-img {
-  /*background-color: lightgray;
-  border-radius: 20px;*/
+  background-color: rgba(255, 165, 0, 0.6);
 }
 
 .AttributionLink {
   width: 150px;
   height: auto;
 }
+
 .Footer {
   background-color: white;
 }
@@ -290,6 +269,7 @@ img {
 a.delete {
   color: red;
 }
+
 .targetLink {
   font-size: 1rem;
 }
@@ -354,6 +334,7 @@ select {
   -webkit-padding-end: 20px;
   -webkit-padding-start: 2px;
   -webkit-user-select: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
   background-position: 95% center;
   background-repeat: no-repeat;
@@ -371,22 +352,20 @@ select {
 
 progress[value] {
   -webkit-appearance: none;
-   appearance: none;
-   height: 20px;
+  appearance: none;
+  height: 20px;
 }
 
 progress[value]::-webkit-progress-bar {
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(253,164,41,1);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(253, 164, 41, 1);
   border-radius: 10px;
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: rgba(254,200,126,1);
+  background-color: rgba(254, 200, 126, 1);
   border-radius: 10px;
 }
-
-hey
 
 /*iPad/tablet CSS*/
 @media screen and (min-width: 768px) {
@@ -412,22 +391,21 @@ hey
     margin-right: auto;
     padding: 10px 0px;
   }
+
   .ProgressBar {
     margin-top: 0%
   }
 
   .Meal {
-    background-color: rgba(255,165,0,0.6);
-    border: 3px solid rgba(255,165,0,0.6);
+    background-color: rgba(255, 165, 0, 0.6);
+    border: 3px solid rgba(255, 165, 0, 0.6);
     border-radius: 10px;
     margin: 10px 10px;
-    /*width: 40vw;*/
   }
 
   .MealPlan {
     background-color: white;
     padding: 5px;
-    /*display: flex;*/
   }
 
   input {
@@ -446,13 +424,16 @@ hey
   h1 {
     text-align: center;
   }
+
   .AttributionLink {
     width: inherit;
     height: auto;
   }
+
   h3.Welcome-Message {
     font-size: 2rem;
   }
+
   .LoginForm {
     background-color: white;
     width: 40vw;
@@ -462,8 +443,8 @@ hey
   }
 
   .Meal {
-    background-color: rgba(255,165,0,0.6);
-    border: 3px solid rgba(255,165,0,0.6);
+    background-color: rgba(255, 165, 0, 0.6);
+    border: 3px solid rgba(255, 165, 0, 0.6);
     border-radius: 10px;
     margin: 10px 10px;
     width: 40vw;
@@ -474,6 +455,7 @@ hey
     padding: 5px;
     display: flex;
   }
+
   .CalorieGoalForm {
     display: flex;
     flex-flow: row;
@@ -483,12 +465,7 @@ hey
     display: flex;
     flex-flow: row;
   }
-  /*canvas.chartjs-render-monitor {
-    display: inline-block;
-    height: 380px !important;
-    width: 840px !important;
-    margin: 0;
-  }*/
+
   .ProgressBar {
     margin-top: 0%
   }
@@ -537,6 +514,7 @@ hey
     -webkit-padding-end: 20px;
     -webkit-padding-start: 2px;
     -webkit-user-select: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
     background-position: 95% center;
     background-repeat: no-repeat;
@@ -555,6 +533,4 @@ hey
   .FoodFormButton {
     display: inline;
   }
-
-
 }
